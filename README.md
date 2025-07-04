@@ -25,7 +25,6 @@ The objective is to extract insights from healthcare service reviews using machi
 - `complete.py`: Integrated end-to-end pipeline
 - `ROCcurve.py`: Generates ROC curve for classifier performance
 - `piechart.py`: Pie chart for aspect sentiment distribution
-- `Train and predict.ipynb`: Jupyter notebook for model testing
 
 ---
 
