@@ -1,62 +1,46 @@
-<h2>Project Title: Aspect-Based Sentiment Analysis in Indian Healthcare</h2>
+# Healthcare Sentiment Analysis
 
-<ul>
-  <li>Developed an Aspect-Based Sentiment Analysis (ABSA) system to extract meaningful insights from patient reviews.</li>
+This project implements Aspect-Based Sentiment Analysis (ABSA) on Indian healthcare reviews to classify sentiments related to specific aspects such as treatment quality, doctor behavior, staff support, and medicine effectiveness.
 
-  <li>Classified feedback as positive, negative, or neutral based on specific aspects such as:
-    <ul>
-      <li>Treatment quality</li>
-      <li>Doctor behavior</li>
-      <li>Staff support</li>
-      <li>Medicine effectiveness</li>
-    </ul>
-  </li>
+The objective is to extract insights from healthcare service reviews using machine learning and NLP techniques to assist healthcare providers in improving service quality.
 
-  <li>Used a combination of:
-    <ul>
-      <li>Public dataset (from open sources)</li>
-      <li>Synthetic private dataset (replicated from healthcare platforms like JustDial)</li>
-    </ul>
-  </li>
+---
 
-  <li>Preprocessed the text data by:
-    <ul>
-      <li>Removing special characters, numbers, and stop words</li>
-      <li>Converting text to lowercase</li>
-      <li>Applying lemmatization for normalization</li>
-    </ul>
-  </li>
+## Features
 
-  <li>Extracted healthcare-related aspects using keyword-based techniques.</li>
+- Aspect tagging using keyword-based extraction
+- Sentiment classification using TF-IDF and Logistic Regression
+- Handling of class imbalance with SMOTE
+- Visualization using ROC curves and pie charts
+- Compatible with both public and synthetic private datasets
 
-  <li>Converted text into numerical features using TF-IDF (Term Frequency-Inverse Document Frequency).</li>
+---
 
-  <li>Trained a Logistic Regression model to classify sentiment.</li>
+## Project Structure
 
-  <li>Applied SMOTE (Synthetic Minority Over-sampling Technique) to handle data imbalance.</li>
+- `sentiment.py`: Core ML model for sentiment analysis
+- `publicdataset.py`: Processing and modeling on public dataset
+- `privatedataset.py`: Processing and modeling on synthetic dataset
+- `accuracy.check.py`: Model evaluation and accuracy reporting
+- `complete.py`: Integrated end-to-end pipeline
+- `ROCcurve.py`: Generates ROC curve for classifier performance
+- `piechart.py`: Pie chart for aspect sentiment distribution
+- `Train and predict.ipynb`: Jupyter notebook for model testing
 
-  <li>Evaluated model performance using:
-    <ul>
-      <li>Accuracy</li>
-      <li>Precision</li>
-      <li>Recall</li>
-      <li>F1-score</li>
-    </ul>
-  </li>
+---
 
-  <li>Visualized results using:
-    <ul>
-      <li>Pie charts (for sentiment distribution)</li>
-      <li>ROC curves (for classification performance)</li>
-    </ul>
-  </li>
+## Datasets
 
-  <li>Achieved:
-    <ul>
-      <li>100% accuracy on the public dataset</li>
-      <li>80% accuracy on the synthetic private dataset</li>
-    </ul>
-  </li>
+- **Public Dataset**: Cleaned and manually labeled review dataset
+- **Private Dataset**: Synthetic dataset created with support from Jio Platforms, used for academic research purposes
 
-  <li>Generated structured insights from unstructured reviews to support data-driven improvements in healthcare services using NLP and ML techniques.</li>
-</ul>
+---
+
+## Results
+
+- Achieved 100% accuracy on a small public dataset
+- Achieved approximately 80% accuracy on the synthetic private dataset
+- Evaluation includes confusion matrix, accuracy score, and ROC curves
+
+---
+
