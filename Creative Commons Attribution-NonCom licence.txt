@@ -1,0 +1,18 @@
+Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License
+
+Copyright (c) 2025 Jesika Choudhary
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License.
+
+You are free to:
+- View and share the original material with proper attribution.
+
+You may not:
+- Use the material for commercial purposes.
+- Modify, remix, or build upon the material.
+- Repost or reupload the material to GitHub or any other platform as your own.
+
+For any use not allowed by this license, you must get permission from the copyright holder.
+
+To view a copy of this license, visit:
+https://creativecommons.org/licenses/by-nc-nd/4.0/
